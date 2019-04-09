@@ -69,14 +69,30 @@ class MainActivity : AppCompatActivity() {
 
         bValid.setOnClickListener(object: View.OnClickListener {
             override fun onClick(view: View): Unit {
-                textView1.text = ""
+
                 if (textView1.text == "11111") {
                     passwordValid.setValue("ON")
                 } else {
 
                 }
-
+                textView1.text = ""
             }
+        })
+
+        val badgeValid : DatabaseReference = myRef.child("badgeValid")
+        badgeValid.addValueEventListener(object: ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {
+                Log.v("file", "Failed to read value.", error.toException())
+            }
+
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val value = dataSnapshot.getValue(String::class.java)
+                Log.d("file","Value is: " + value)
+                if (value == "OFF") {
+                    finish()
+                }
+            }
+
         })
 
         val textView1: TextView = findViewById(R.id.textView1)

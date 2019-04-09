@@ -23,7 +23,7 @@
                 android:layout_gravity="center"
         />
         <TextView
-                android:text="Passer la carte"
+                android:text="Scanner le portable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvTitle"
