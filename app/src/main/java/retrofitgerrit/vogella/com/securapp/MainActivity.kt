@@ -55,12 +55,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         val bValid : Button = findViewById(R.id.bValid)
+        val bDelete : Button = findViewById(R.id.bDelete)
+
+        bDelete.setOnClickListener(object: View.OnClickListener {
+            override fun onClick(view: View): Unit {
+
+                if (textView1.text != "") {
+                    textView1.text = textView1.text.substring(0, textView1.text.length - 1);
+                }
+
+            }
+        })
 
         bValid.setOnClickListener(object: View.OnClickListener {
             override fun onClick(view: View): Unit {
-
+                textView1.text = ""
                 if (textView1.text == "11111") {
                     passwordValid.setValue("ON")
+                } else {
+
                 }
 
             }
