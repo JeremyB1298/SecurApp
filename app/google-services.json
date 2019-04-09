@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "357643839187",
+    "firebase_url": "https://securapp-41c85.firebaseio.com",
+    "project_id": "securapp-41c85",
+    "storage_bucket": "securapp-41c85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357643839187:android:55e430150cfcb804",
+        "android_client_info": {
+          "package_name": "retrofitgerrit.vogella.com.securapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357643839187-7utg9dc2r3o32tdlv9ic8n6rebgdec7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "retrofitgerrit.vogella.com.securapp",
+            "certificate_hash": "9664ab64a720e8feea4a91ccdad52ce063d54761"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATj8sY5MmuyM6NPDNbT8RdAlq7B5CuQks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357643839187-n90lliif60or7iqk2a61t2u1c34t44m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
